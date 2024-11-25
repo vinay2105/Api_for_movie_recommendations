@@ -66,6 +66,10 @@ def recommend(movie: str):
     except IndexError:
         raise HTTPException(status_code=404, detail=f"Movie '{movie}' not found in the dataset.")
 
+@app.get("/")
+def root():
+    return {"message": "Welcome to the Movie Recommendation API. Use the /recommend endpoint."}
+
 @app.get("/recommend", summary="Get movie recommendations")
 def get_recommendations(movie: str = Query(..., description="The name of the movie for getting recommendations")):
     """
@@ -78,4 +82,6 @@ def get_recommendations(movie: str = Query(..., description="The name of the mov
         tuple: A tuple containing a list of recommended movie titles and their poster URL.
     """
     return recommend(movie)
+
+
 
