@@ -3,3 +3,4 @@ gdown==5.2.0
 pandas==2.2.3
 pydantic==2.10.1
 Requests==2.32.3
+uvicorn
