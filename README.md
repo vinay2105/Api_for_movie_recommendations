@@ -14,3 +14,4 @@ Key components of this API include:
 The API serves as a lightweight and scalable solution for movie recommendation applications, making it ideal for integration into web and mobile platforms.
 
 API LINK - https://api-for-movie-recommendations-1.onrender.com
+WebAPP LINK - https://recommender-5v2v.onrender.com
